@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head>
+
+
+<title>The Gigsaw NextGen Sequence Assembly Simulator</title>
+<link rel="stylesheet" type="text/css"  href="/gigsaw/styles1.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head><body>
+
+	<h1>The Gigsaw NextGen Sequence Assembly Simulator</h1>
+	    <div class="bodydiv">
+	    Gigsaw is a script that produces a physical model simulation of 
+Next Generation Sequencing experiments. These models are ideal for 
+teaching and illustrating the concepts and challenges of Next 
+Generation Sequencing. The model is created as PDF which can then be 
+printed and cut out.  You can run Gigsaw <a href=/gigsaw/cgi-bin/gigsaw.pl>here</a> or there are some pre-prepared examples below. More experiment examples are welcome.
+
+</div>
+<h2>Example Experiments</h2><div class=bodydiv>
+<dl>
+  <dt>Easy <i>de novo</i> assembly</dt>
+<dd>No Errors, No repeats. Just attempt to assemble the <a href=Easy_de_novo_assembly.pdf>reads</a> into one contig. Take note of the coverage (number of reads aligned) at each position to see that it is even. The <a href=Easy_de_novo_assembly_reference.pdf>reference sequence</a> can be used to check your assembly.</dd>
+  <dt>Hard <i>de novo</i> assembly</dt>
+<dd>Some errors, some repeats. It is not possible to reliably build just one correct contig from the <a href=Hard_de_novo_assembly.pdf>single end data</a>. This can potentially be solved by adding in <a href=Hard_de_novo_assembly_paired_end.pdf>paired end data</a>. Check your assembly against the <a href=Hard_de_novo_assembly_reference.pdf>reference sequence</a></dd>
+<dt>Mutation detection</dt>
+<dd>Aligning the <a href=Mutation.pdf>reads</a> against the <a href=Mutation_reference.pdf>reference sequence</a> highlights two variations. If you translate from the first ATG then one of the variants is silent, the other results in an amino acid change.</dd>
+<dt>SNP detection</dt>
+<dd>There are two SNPs and plenty of errors observed when you align the <a href=SNP_detection.pdf>reads against the reference sequence</a></dd>
+<dt>RNAseq exon analysis</dt>
+<dd>Only the <a href=RNAseq_reads.pdf>reads</a> from the mRNA which are almost entirely within an exon will align against the <a href=RNAseq_genomic.pdf>genome sequence</a>. The other reads will bridge between the two obvious exons.</dd>
+</dl>
+</div>
+
+	<div class="footerdiv">
+Gigsaw was conceived and created by <a href="mailto:d.m.a.martin@dundee.ac.uk">Dr David Martin</a> at the University of Dundee.
+</div>
+</body></html>
